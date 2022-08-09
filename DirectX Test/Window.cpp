@@ -35,8 +35,8 @@ bool Window::init()
 	wc.cbWndExtra = NULL;
 	wc.hbrBackground = (HBRUSH)COLOR_WINDOW;
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
-	wc.hIcon = LoadIcon(NULL, IDI_ERROR);
-	wc.hIconSm = LoadIcon(NULL, IDI_ERROR);
+	wc.hIcon = LoadIcon(NULL, IDI_APPLICATION);
+	wc.hIconSm = LoadIcon(NULL, IDI_APPLICATION);
 	wc.hInstance = NULL;
 	wc.lpszClassName = "MainWindowClass";
 	wc.lpszMenuName = "";
@@ -46,7 +46,8 @@ bool Window::init()
 	if (!::RegisterClassEx(&wc))
 		return false;
 
-
+	if (!window)
+		window = this;
 
 	m_hwnd = ::CreateWindowEx(WS_EX_OVERLAPPEDWINDOW, "MainWindowClass", "DirectTest", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 1024, 768,
 		NULL, NULL, NULL, NULL);
@@ -57,8 +58,7 @@ bool Window::init()
 	::ShowWindow(m_hwnd, SW_SHOW);
 	::UpdateWindow(m_hwnd);
 
-	if (!window)
-		window = this;
+	
 
 	m_is_run = true;
 	return true;
