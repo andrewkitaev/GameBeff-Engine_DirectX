@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.2017
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectX Test", "DirectX Test\DirectX Test.vcxproj", "{9072444B-3B6F-4622-A968-1B53EB1D0362}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9072444B-3B6F-4622-A968-1B53EB1D0362}.Debug|x64.ActiveCfg = Debug|x64
+		{9072444B-3B6F-4622-A968-1B53EB1D0362}.Debug|x64.Build.0 = Debug|x64
+		{9072444B-3B6F-4622-A968-1B53EB1D0362}.Debug|x86.ActiveCfg = Debug|Win32
+		{9072444B-3B6F-4622-A968-1B53EB1D0362}.Debug|x86.Build.0 = Debug|Win32
+		{9072444B-3B6F-4622-A968-1B53EB1D0362}.Release|x64.ActiveCfg = Release|x64
+		{9072444B-3B6F-4622-A968-1B53EB1D0362}.Release|x64.Build.0 = Release|x64
+		{9072444B-3B6F-4622-A968-1B53EB1D0362}.Release|x86.ActiveCfg = Release|Win32
+		{9072444B-3B6F-4622-A968-1B53EB1D0362}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45043EFE-A327-419C-B345-00388D0A14D5}
+	EndGlobalSection
+EndGlobal
